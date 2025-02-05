@@ -7,12 +7,12 @@ export const Header = () => {
         <div className="flex flex-row h-[100px] justify-between bg-blue-200">
             <div className="flex items-center absolute w-[185px] h-[41px] top-[29px] left-[54px] gap-[5px]">
                 <img className="w-[50px] h-[32px]" src={logo} alt="logo" />
-                <h1 className="w-[130px] h-[41px] text-[34px] font-bold leading-[41.45px] text-left text-black">
+                <h1 className="w-[130px] h-[41px] text-[34px] font-bold leading-[41.45px] font-montserrat text-left text-black">
                     Furniro
                 </h1>
             </div>
             <div>
-                <nav className="flex flex-row items-center absolute w-[430px] h-[24px] top-[38px] left-[505px] gap-[100px] text-black">
+                <nav className="flex flex-row items-center absolute w-[430px] h-[24px] top-[38px] left-[505px] gap-[100px] font-poppins text-black">
                     <a href="">Home</a>
 
                     <a href="">Shop</a>
