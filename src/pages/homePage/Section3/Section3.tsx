@@ -294,8 +294,10 @@ export const Section3 = () => {
                     </div>
                 </div>
                 {/* Show More */}
-                <div className="flex justify-center items-center w-[245px] h-[48px] border border-[#B88E2F] font-semibold text-[16px] leading-[24px] text-[#B88E2F]">
-                    <p>Show More</p>
+                <div>
+                    <button className="flex justify-center items-center w-[245px] h-[48px] border border-[#B88E2F] font-semibold text-[16px] leading-[24px] text-[#B88E2F]">
+                        Show More
+                    </button>
                 </div>
             </div>
         </div>
