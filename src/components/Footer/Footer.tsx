@@ -8,8 +8,8 @@ export const Footer = () => {
         //footer
         <div className="flex justify-center items-center h-[505px] border-t border-black/[0.17] font-poppins">
             {/* Group 45 */}
-            <div className="flex flex-col w-[1240.01px] h-[419px] left-[100px] gap-[100px]">
-                {/* Group 32 */}
+            <div className="flex flex-col w-[1240.01px] h-[419px] gap-[48px]">
+                {/* Group 32 - Funiro e Redes Sociais, e + 3 Colunas */}
                 <div className="flex flex-row justify-between ">
                     {/* Infos e Redes Sociais */}
                     <div className="flex flex-col gap-[50px]">
@@ -26,7 +26,7 @@ export const Footer = () => {
                                 FL 33134 USA
                             </p>
                         </div>
-                        {/* Group 12 */}
+                        {/* Group 12 - Redes Sociais*/}
                         <div className="flex flex-row justify-between w-[184px] h-[34px]">
                             <a href="https://www.facebook.com/" target="_blank">
                                 <img
@@ -64,7 +64,7 @@ export const Footer = () => {
                     <div className="flex flex-row justify-between w-[710px] h-[312px] left-[523.01px]">
                         {/* Group 28 */}
                         <div className="flex flex-row justify-center gap-[114px]">
-                            {/* Group 26 */}
+                            {/* Group 26 - Link */}
                             <div>
                                 <div className="flex flex-col gap-[55px]">
                                     {/* Links */}
@@ -80,7 +80,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* Group 27 */}
+                            {/* Group 27 - Help */}
                             <div>
                                 <div className="flex flex-col gap-[55px]">
                                     {/* Help */}
@@ -96,29 +96,30 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Group 30 */}
-                        <div className="flex flex-col gap-[45px]">
+                        {/* Group 30 - Newsletter e Imput */}
+                        <div className="flex flex-col gap-[53px]">
                             {/* Newsletter */}
                             <div className="text-[#9F9F9F]">
                                 <p>Newsletter</p>
                             </div>
                             {/* Group 29 */}
-                            <div className="flex flex-row justify-between gap-[11px]">
-                                <input
-                                    type="email"
-                                    placeholder="Enter Your Email Address"
-                                    className="w-full border-0 border-b-2 border-black focus:border-black outline-none px-2 py-1"
-                                />
-                                <button className="mt-2 border-0 border-b-2 border-black px-4 py-1 bg-transparent">
-                                    Subscribe
-                                </button>
+                            <div className="flex flex-row items-center w-[286px] gap-[11px]">
+                                <div className="flex justify-center items-center w-[173px] h-[21px] leading-5 border-0 border-b-2 border-black focus:border-black outline-none px-2 py-1 text-[14px] text-left">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter Your Email Address"
+                                    />
+                                </div>
+                                <div className="flex justify-center items-center w-[75px] h-[21px] font-medium leading-5 border-0 border-b-2 border-black px-4 py-1 text-[14px]">
+                                    <button>Subscribe</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* Group 44 */}
-                <div className="relative w-[1240.0145px] border-t-[1px] border-solid  border-[#D9D9D9]">
-                    <div className="flex border-t border-t-solid text-base leading-[24px] text-left">
+                {/* Group 44 - Rodapé */}
+                <div className="flex items-end w-[1240.01px] h-[59px] border-t-[1px] border-solid border-[#D9D9D9]">
+                    <div className="flex leading-[24px] text-left">
                         <p>2023 furniro. All rights reverved</p>
                     </div>
                 </div>
