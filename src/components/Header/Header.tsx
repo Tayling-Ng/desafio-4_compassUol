@@ -4,7 +4,7 @@ import carrinho from '../../assets/img-header/Vector-carrinho.png';
 
 export const Header = () => {
     return (
-        <div className="flex flex-row h-[100px] justify-between bg-blue-200">
+        <div className="flex flex-row h-[100px] justify-between">
             <div className="flex items-center absolute w-[185px] h-[41px] top-[29px] left-[54px] gap-[5px]">
                 <img className="w-[50px] h-[32px]" src={logo} alt="logo" />
                 <h1 className="w-[130px] h-[41px] text-[34px] font-bold leading-[41.45px] font-montserrat text-left text-black">
