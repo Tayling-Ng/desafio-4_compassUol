@@ -103,8 +103,8 @@ export const Footer = () => {
                                 <p>Newsletter</p>
                             </div>
                             {/* Group 29 */}
-                            <div className="flex flex-row items-center w-[286px] gap-[11px]">
-                                <div className="flex justify-center items-center w-[173px] h-[21px] leading-5 border-0 border-b-2 border-black focus:border-black outline-none px-2 py-1 text-[14px] text-left">
+                            <div className="flex flex-row items-center w-[286px] gap-[11px] ">
+                                <div className="flex  items-center w-[200px] h-[21px] leading-5 border-0 border-b-2 border-black focus:border-black outline-none text-[14px] ">
                                     <input
                                         type="email"
                                         placeholder="Enter Your Email Address"
