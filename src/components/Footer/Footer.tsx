@@ -28,36 +28,35 @@ export const Footer = () => {
                         </div>
                         {/* Group 12 - Redes Sociais*/}
                         <div className="flex flex-row justify-between w-[184px] h-[34px]">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <img
-                                    className=""
-                                    src={facebook}
-                                    alt="Facebook"
-                                />
-                            </a>
-
-                            <a
-                                href="https://www.instagram.com/"
-                                target="_blank"
-                            >
-                                <img
-                                    className=""
-                                    src={instagram}
-                                    alt="Instagram"
-                                />
-                            </a>
-
-                            <a href="https://x.com/" target="_blank">
-                                <img className="" src={twitter} alt="Twiter" />
-                            </a>
-
-                            <a href="https://www.linkedin.com/" target="_blank">
-                                <img
-                                    className=""
-                                    src={linkedin}
-                                    alt="Linkedin"
-                                />
-                            </a>
+                            <div className="flex justify-center items-center w-[34px] h-[34px] bg-white rounded-full shadow-[0px_4px_14px_0px_#00000026]">
+                                <a
+                                    href="https://www.facebook.com/"
+                                    target="_blank"
+                                >
+                                    <img src={facebook} alt="Facebook" />
+                                </a>
+                            </div>
+                            <div className="flex justify-center items-center w-[34px] h-[34px] bg-white rounded-full shadow-[0px_4px_14px_0px_#00000026]">
+                                <a
+                                    href="https://www.instagram.com/"
+                                    target="_blank"
+                                >
+                                    <img src={instagram} alt="Instagram" />
+                                </a>
+                            </div>
+                            <div className="flex justify-center items-center w-[34px] h-[34px] bg-white rounded-full shadow-[0px_4px_14px_0px_#00000026]">
+                                <a href="https://x.com/" target="_blank">
+                                    <img src={twitter} alt="Twiter" />
+                                </a>
+                            </div>
+                            <div className="flex justify-center items-center w-[34px] h-[34px] bg-white rounded-full shadow-[0px_4px_14px_0px_#00000026]">
+                                <a
+                                    href="https://www.linkedin.com/"
+                                    target="_blank"
+                                >
+                                    <img src={linkedin} alt="Linkedin" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     {/* Group 31 */}
