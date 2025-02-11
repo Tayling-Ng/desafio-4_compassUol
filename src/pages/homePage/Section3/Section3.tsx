@@ -83,7 +83,6 @@ export const Section3 = () => {
                                     </div>
                                 </div>
                             </div>
-
                             {/* Add to cart */}
                             <div className="flex flex-col justify-center items-center w-[252px] h-[96px] absolute top-[175px] left-[16px] gap-[24px] ">
                                 <div>
@@ -92,30 +91,30 @@ export const Section3 = () => {
                                     </button>
                                 </div>
                                 <div className="flex flex-row justify-between w-[252px] h-[24px] text-white gap-[20px]">
-                                    <div className="flex flex-row justify-center items-center gap-[2px]">
+                                    <button className="flex flex-row justify-center items-center gap-[2px]">
                                         <div>
                                             <img src={share} alt="img" />
                                         </div>
                                         <div>
                                             <p>Share</p>
                                         </div>
-                                    </div>
-                                    <div className="flex flex-row justify-center items-center gap-[2px]">
+                                    </button>
+                                    <button className="flex flex-row justify-center items-center gap-[2px]">
                                         <div>
                                             <img src={compare} alt="img" />
                                         </div>
                                         <div>
                                             <p>Compare</p>
                                         </div>
-                                    </div>
-                                    <div className="flex flex-row justify-center items-center gap-[2px]">
+                                    </button>
+                                    <button className="flex flex-row justify-center items-center gap-[2px]">
                                         <div>
                                             <img src={like} alt="img" />
                                         </div>
                                         <div>
                                             <p>Like</p>
                                         </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
