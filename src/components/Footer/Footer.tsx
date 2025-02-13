@@ -1,9 +1,25 @@
+import { useState } from 'react';
 import facebook from '../../assets/img-footer/facebook.png';
 import instagram from '../../assets/img-footer/instagram.png';
 import twitter from '../../assets/img-footer/twitter.png';
 import linkedin from '../../assets/img-footer/linkedin.png';
 
 export const Footer = () => {
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubscribe = () => {
+        const emailRegex =
+            /^[^\s@]+@([a-zA-Z0-9-]+\.)?(gmail\.com|yahoo\.com|hotmail\.com|outlook\.com|icloud\.com|aol\.com|protonmail\.com|zoho\.com|live\.com|yandex\.com|bol\.com\.br|uol\.com\.br|[a-zA-Z0-9-]+\.(com|net|org|gov|edu|br|co\.uk|com\.br|io|ai))$/;
+
+        if (!emailRegex.test(email)) {
+            setMessage('Please enter a valid email address.');
+        } else {
+            setMessage('Subscribe successfully.');
+            setEmail('');
+        }
+    };
+
     return (
         //footer
         <div className="flex justify-center items-center h-[505px] border-t border-black/[0.17] font-poppins">
@@ -103,16 +119,38 @@ export const Footer = () => {
                             </div>
                             {/* Group 29 */}
                             <div className="flex flex-row items-center w-[286px] gap-[11px] ">
-                                <div className="flex  items-center w-[200px] h-[21px] leading-5 border-0 border-b-2 border-black focus:border-black outline-none text-[14px] ">
+                                <div className="flex  items-center w-[200px] h-[21px] leading-5 border-0 border-b-2 border-black text-[14px] ">
                                     <input
+                                        className="w-[200px] pl-1"
                                         type="email"
                                         placeholder="Enter Your Email Address"
+                                        value={email}
+                                        onChange={(e) =>
+                                            setEmail(e.target.value)
+                                        }
+                                        onKeyDown={(e) =>
+                                            e.key === 'Enter' &&
+                                            handleSubscribe()
+                                        }
                                     />
                                 </div>
                                 <div className="flex justify-center items-center w-[75px] h-[21px] font-medium leading-5 border-0 border-b-2 border-black px-4 py-1 text-[14px]">
-                                    <button>Subscribe</button>
+                                    <button onClick={handleSubscribe}>
+                                        Subscribe
+                                    </button>
                                 </div>
                             </div>
+                            {message && (
+                                <p
+                                    className={
+                                        message === 'Subscribe successfully.'
+                                            ? 'text-green-500'
+                                            : 'text-red-500'
+                                    }
+                                >
+                                    {message}
+                                </p>
+                            )}
                         </div>
                     </div>
                 </div>
