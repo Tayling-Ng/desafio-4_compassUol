@@ -13,7 +13,7 @@ export const Header = () => {
             </div>
             <div>
                 <nav className="flex flex-row items-center absolute w-[430px] h-[24px] top-[38px] left-[505px] gap-[100px] font-poppins text-black">
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
 
                     <a href="">Shop</a>
 
@@ -23,11 +23,13 @@ export const Header = () => {
                 </nav>
             </div>
             <div className="flex flex-row items-center absolute h-[100px] gap-[30px] right-20">
-                <img
-                    className="w-[23.33px] h-[18.67px] top-[41px] left-[1255px]"
-                    src={usuario}
-                    alt="usuario"
-                />
+                <a href="/login">
+                    <img
+                        className="w-[23.33px] h-[18.67px] top-[41px] left-[1255px]"
+                        src={usuario}
+                        alt="usuario"
+                    />
+                </a>
                 <img
                     className="w-[24.53px] h-[22.06px] top-[3.55px] left-[1.67px]"
                     src={carrinho}
